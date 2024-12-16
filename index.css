@@ -1,0 +1,44 @@
+body {
+    overflow: hidden;
+    background: url("water.jpeg") ;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.bubble {
+    width: 70px;
+    position: absolute;
+
+    animation-name: goUp;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-1500px);
+    }
+}
+
+.bub {
+    width: 70px;
+    position: absolute;
+
+    animation-name: goDown;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goDown {
+    0% {
+        transform: translateY(-1500px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
